@@ -9,9 +9,20 @@ tags: [crossword, jigsaw, puzzle, malware, AgentTesla, eml, phishing, AnyRun]
 
 Hey there and welcome back to another blog post. I will be discussing my challenges for the `BSides Nairobi 2023 Cyber Challenge` that took place on the 04/11/2023 at [USIU](https://www.usiu.ac.ke/). The challenge was tackled by 45 registerd teams.
 
-After 8hrs of competing, [p3rf3ctr00t](https://ctftime.org/team/193649/), led by [_k4p3re](https://twitter.com/_k4p3r3_) emerged 🥇 place. 
+After 8hrs of competing, [p3rf3ctr00t](https://ctftime.org/team/193649/), led by [_k4p3re_](https://twitter.com/_k4p3r3) emerged 🥇 place. 
 
 ![image](https://user-images.githubusercontent.com/58165365/280506659-67706b5d-3e73-4712-8db1-287554516e8b.png)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">well well well, here we are again, champions for the recently concluded <a href="https://twitter.com/BSidesNairobi?ref_src=twsrc%5Etfw">@BSidesNairobi</a> in conjunction with <a href="https://twitter.com/CTF_Room?ref_src=twsrc%5Etfw">@CTF_Room</a> CTF.<a href="https://twitter.com/fr334aks?ref_src=twsrc%5Etfw">@fr334aks</a> in your face 😂 <a href="https://t.co/9eahGqPlG1">pic.twitter.com/9eahGqPlG1</a></p>&mdash; p3rf3ctr00t (@p3rf3ctr00t) <a href="https://twitter.com/p3rf3ctr00t/status/1720832721809731885?ref_src=twsrc%5Etfw">November 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The audacity to rub it on @fr334aks face
+
+![gif](https://media.giphy.com/media/wID3zXURLH1jrjCcZy/giphy.gif)
+
+This year, the event was special as the first team bagged home a trophy
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Lol. Watch the new shiny trophy effect. <a href="https://twitter.com/Amarjit_Labu?ref_src=twsrc%5Etfw">@Amarjit_Labu</a> <a href="https://twitter.com/JonesBaraza?ref_src=twsrc%5Etfw">@JonesBaraza</a> were mesmerized. The effects tell it all 🤣 <a href="https://twitter.com/hashtag/BsidesNairobi?src=hash&amp;ref_src=twsrc%5Etfw">#BsidesNairobi</a> <a href="https://twitter.com/hashtag/BsidesNairobi2023?src=hash&amp;ref_src=twsrc%5Etfw">#BsidesNairobi2023</a> <a href="https://t.co/ZHEr1UogbF">pic.twitter.com/ZHEr1UogbF</a></p>&mdash; #BSidesNairobi 2023 (@BSidesNairobi) <a href="https://twitter.com/BSidesNairobi/status/1720795590446006654?ref_src=twsrc%5Etfw">November 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 # Misc
@@ -36,7 +47,7 @@ This challenge brings together an all-rounded quiz that encompasses questions on
 
 
 
-### Jigsaw
+## Jigsaw
 
 A scrambled image awaits your expertise. Piece it together to reveal a message or picture. But there's a twist! This isn't just a virtual game. Once you believe the image is whole and the message clear, the team captain must approach the challenge master (05t3) to claim a physical flag. But be wary: precision matters, and only a perfectly assembled image will lead to victory.
 
@@ -69,35 +80,35 @@ I recently encountered a potentially malicious email and thought it would be int
 
 Start by analyzing this email.
 
-- 1. Who is the sender of this email? (25pts)
+- Who is the sender of this email? (25pts)
 
 `BSidesNBI{2export@ekofood.com.tr}`
 
-- 2. What is the JARM fingerprint of the Originating IP rDNS address? (25pts)
+- What is the JARM fingerprint of the Originating IP rDNS address? (25pts)
 
 `BSidesNBI{15d3fd16d29d29d00042d43d00000071784fa9f8305ba9220d0a7894b6ff2c}`
 
-- 3. What is the md5sum of the email attachment? (25pts)
+- What is the md5sum of the email attachment? (25pts)
 
 `BSidesNBI{2dae57b509d72eb69166e9d48995e530}`
 
-- 4. Without opening the attachment on your host machine, use an online sandbox like AnyRun to observe what happens when the document is opened. From your analysis, what CVE is associate with the attachment? (25pts)
+- Without opening the attachment on your host machine, use an online sandbox like AnyRun to observe what happens when the document is opened. From your analysis, what CVE is associate with the attachment? (25pts)
 
 `BSidesNBI{CVE-2017-11882}`
 
-- 5. What malware family is likely associated with the attachment? (25pts)
+- What malware family is likely associated with the attachment? (25pts)
 
 `BSidesNBI{agenttesla}`
 
-- 6. Take a look at the malware configuration. What is the c2 Domain address? (25pts)
+- Take a look at the malware configuration. What is the c2 Domain address? (25pts)
 
 `BSidesNBI{cp5ua.hyperhost.ua}`
 
-- 7. In your opinion, what protocol do you suspect could have been leveraged on for potential exfiltration? (25pts)
+- In your opinion, what protocol do you suspect could have been leveraged on for potential exfiltration? (25pts)
 
 `BSidesNBI{smtp}`
 
-- 8. What was the username and password used in the protocol mentioned above? (25pts)
+- What was the username and password used in the protocol mentioned above? (25pts)
 
 `BSidesNBI{arinzelog@saonline.xyz_7213575aceACE@#$}`
 
@@ -112,20 +123,20 @@ Upon loading the file, it rendered as so:
 ![image](https://user-images.githubusercontent.com/58165365/280507601-9ee88b92-248a-4837-8cb2-1f816135c860.png)
 
 Straight up, I know this was a phishing email.
-- 1. I dont own any products that i'm selling 😂
-- 2. The attached list was a `.doc` (Items list.doc) - potentially containing malware 🚩
-- 3. Inconsistent display-name. The 'From' email address local-part `2export` is inconsistent with the display-name `Fatih ALTINDAŞ` provided in the email.
-- 4. I looked up the display-name online (`Fatih ALTINDAŞ`) and got a hit on [LinkedIn](https://www.linkedin.com/in/fatih-alt%C4%B1nda%C5%9F-4b87104b/).
+- I dont own any products that i'm selling 😂
+- The attached list was a `.doc` (Items list.doc) - potentially containing malware 🚩
+- Inconsistent display-name. The 'From' email address local-part `2export` is inconsistent with the display-name `Fatih ALTINDAŞ` provided in the email.
+- I looked up the display-name online (`Fatih ALTINDAŞ`) and got a hit on [LinkedIn](https://www.linkedin.com/in/fatih-alt%C4%B1nda%C5%9F-4b87104b/).
 
 ![image](https://user-images.githubusercontent.com/58165365/280508284-55461410-a286-470b-b1ac-442e2741a2b0.png)
 
-From his profile, there are no records of him working at `megaendustri`. He's also from Turkey. Impersonation attempt? 🤔
+From his profile, there are no records of him working at `megaendustri`. He's also from Turkey. Impersonation? 🤔
 
-- 5. Doing a quick WHOIS lookup, I learnt that the domain could be legit as it's creation date is kinda old (1999). The company also seems to be in Turkey
+- Doing a quick WHOIS lookup, I learnt that the domain could be legit as it's creation date is kinda old (1999). The company also seems to be in Turkey
 
 ![image](https://user-images.githubusercontent.com/58165365/280508423-9ea214ff-89bf-4096-9258-b75539759bc7.png)
 
-- 6. Confirming if the domain is malicious on [VT](https://www.virustotal.com/gui/url/d3f288c18224ecf1d598eef889b96aaaa10891229972a596552d9870ee0eb730) , I didn't get any hits.
+- Confirming if the domain is malicious on [VT](https://www.virustotal.com/gui/url/d3f288c18224ecf1d598eef889b96aaaa10891229972a596552d9870ee0eb730) , I didn't get any hits.
 
 ![image](https://user-images.githubusercontent.com/58165365/280508682-0e817b3d-2e4c-42b2-8a79-2c91363bfd05.png)
 
@@ -180,7 +191,7 @@ Taking a look at the suricata  rules fired, we see:
 
 ![image](https://user-images.githubusercontent.com/58165365/280509872-af66f18b-2593-4bd6-a5b5-494922582b71.png)
 
-One notable rule is `Successful Credential Theft Detected`. The event is a successful credential theft detected, where an attempt to exfiltrate data via SMTP was made. The process image involved is "`C:\Users\admin\AppData\Roaming\arinze963004.exe`". This event is triggered by a malicious program.
+One notable rule is `Successful Credential Theft Detected` where an attempt to exfiltrate data via SMTP was made. The process image involved is "`C:\Users\admin\AppData\Roaming\arinze963004.exe`". This event is triggered by a malicious program.
             
 Lets disect it. 
 
@@ -225,3 +236,90 @@ In summary:
 This is a phishing email  spreading the AgentTesla malware. This malware primarily spreads through phishing emails. It has been observed in spear phishing campaigns against multiple different industries, including energy, logistics, finance, and government. it was first seen in the wild around  1 January, 2014 and likely originating from Turkey. This confirms our earlier findings.
 
 You can read more about it or track it [here](https://any.run/malware-trends/agenttesla)
+
+### Module: Network Analysis
+
+**Linking the analysis above with the network traffic around that period, can identify what really transpired?**
+
+File can be downloaded [here]()
+
+- How long did it take to capture these packets? (25pts)
+
+`BSidesNBI{00:01:36}`
+
+- What is the victim's IP address? (25pts)
+
+`BSidesNBI{192.168.100.56}`
+
+- An executable was downloaded from a remote server. What is it's md5sum?	(25pts)
+
+`BSidesNBI{d85ad0ba989beb96da04aae8d44add7f}`
+
+- Can you provide the full URI used to download the executable. (25pts)	
+
+`BSidesNBI{http://zang1.almashreaq.top/_errorpages/arinzezx.exe}`
+
+- A DNS query was made to the domain above, can you identify the IP4 addresses included in the response? (25pts)
+
+`BSidesNBI{104.21.70.74_172.67.221.26}`
+
+-----
+
+#### **Solution**
+
+To answer the first question, simply load the pcap on wireshark and click on the `Statistics` tab and select `Capture File Properties` or `ctrl+alt+shift+c`
+
+![image](https://user-images.githubusercontent.com/58165365/280516010-64acba4f-ee25-472e-89f5-ee534d2b916f.png)
+
+![image](https://user-images.githubusercontent.com/58165365/280515844-9c635dd0-1c40-4d65-abb9-477fd0c5d8a8.png)
+
+Moving on, we can also investigate the IPv4 addresses captured in this traffic. This way, we might identify the victim address. Simply head to `Statistic > Endpoints` and click on the IPv4 tab.
+
+![image](https://user-images.githubusercontent.com/58165365/280516098-783e5e6c-1987-4e28-835f-b7b6337b873d.png)
+
+![image](https://user-images.githubusercontent.com/58165365/280516228-3a2b4de3-2c48-44c2-a00f-a603e3c2797f.png)
+
+Here we see most packets between `192.168.100.56` (A private IP) and `104.21.70.74` (Public IP). Going a step further, we can also get a glimpse of the protocols captured in this traffic. To do so, click on the `Statistics > Protocol Hierarchy` 
+
+![image](https://user-images.githubusercontent.com/58165365/280516836-cb44efad-9217-4084-bf87-2e6a7eee53ca.png)
+
+HTTP ...
+
+![gif](https://media.giphy.com/media/KIxBn0rcMbhII/giphy.gif)
+
+Filtering for http traffic, we see the local ip identified earlier downloading an executable from the remote server. (hxxp:[//]zang1.almashreaq.top/_errorpages/arinzezx.exe)
+
+![image](https://user-images.githubusercontent.com/58165365/280516673-8863ea15-c0b1-424d-b28f-63bc45f39165.png)
+
+We can export the executable for further analysis by simply: 
+
+![image](https://user-images.githubusercontent.com/58165365/280517363-20cec1f8-34d0-431e-a2b2-494a9d39de81.png)
+
+![image](https://user-images.githubusercontent.com/58165365/280517263-ea16268e-c734-4c44-ba36-79d7752cfd51.png)
+
+This is the same executable we saw in our analysis ealier.
+
+![image](https://user-images.githubusercontent.com/58165365/280517522-a37b155c-0572-45c8-a52f-802befa4237a.png)
+
+Inspecting dns queries to the said malicious domain, we see it resolving to two addresses.
+
+![image](https://user-images.githubusercontent.com/58165365/280517913-49ba57d9-6a52-4463-819f-f936a41d3727.png)
+
+We can a step further and inspect the `smtp` exflitration attempt we found earlier. Network traffic consistent with SMTP communication was observed, aligning with the host cp5ua.hyperhost.ua on port 587. Given the context of the discovered malware configuration, it is highly probable that this SMTP communication represents data exfiltration from the compromised system.
+
+![image](https://user-images.githubusercontent.com/58165365/280518897-e497bc0b-76cf-43b8-b703-38a9f7111001.png)
+
+![image](https://user-images.githubusercontent.com/58165365/280518831-199584f4-4ac9-4df7-b428-85ef234fd1bd.png)
+
+After the `220 TLS go ahead` message, the subsequent lines (with seemingly random characters and periods) represent the beginning of the TLS handshake. This is a binary process where the client and server exchange information to securely encrypt their communication. The text you're seeing is a mix of ASCII representation and raw bytes of this binary data.
+
+Within that garbled text, you can find some readable information about a certificate, such as mentions of "Greater Manchester", "Salford", "Sectigo Limited", and "`hyperhost.ua`". This suggests that the certificate was issued by "Sectigo Limited" for "`hyperhost.ua`", and the organization is likely based in Salford, Greater Manchester.
+
+
+Generally, this was a very easy and fun challenge. I hope you got to learn a thing or two.
+
+![gif](https://media.giphy.com/media/wjBMdDqMCyxJoCJ2yZ/giphy.gif)
+
+
+
+
