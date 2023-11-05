@@ -2,7 +2,7 @@
 layout: post
 title: "BSides Nairobi 2023 Cyber Challenge Walkthrough"
 date: 2023-11-05
-image: ../../assets/img/Posts/BSIDES2023.png
+image: ../../assets/img/Posts/BSIDES2023-1.png
 categories: [CTF-TIME]
 tags: [crossword, jigsaw, puzzle, malware, AgentTesla, eml, phishing, AnyRun]
 ---
@@ -320,6 +320,4 @@ Generally, this was a very easy and fun challenge. I hope you got to learn a thi
 
 ![gif](https://media.giphy.com/media/wjBMdDqMCyxJoCJ2yZ/giphy.gif)
 
-
-
-
+ Watch out for PART 2 of this blog post where i'll be diging into the intricacies of iOS Forensics Challenge.
