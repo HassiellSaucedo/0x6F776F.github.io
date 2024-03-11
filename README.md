@@ -1,1 +1,1 @@
-# 05t3's Tech Blog
+# 0x6F776F's Tech Blog
