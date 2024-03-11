@@ -7,29 +7,29 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Oste's Blog # the main title
+title: 0x6F776F's Blog # the main title
 
-tagline: CTF Player | DFIR | Pentester # it will display as the sub-title
+tagline: Cybersecurity Enthusiast | CTF Player # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Realm of Knowledge
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: "https://05t3.github.io"
+url: "https://HassiellSaucedo.github.io"
 
-author: Stephen Kageche # change to your full name
+author: Hassiell Saucedo # change to your full name
 
 avatar: /assets/img/Posts/dp.jpg # support internet resources
 
 github:
-  username: 05t3 # change to your github username
+  username: HassiellSaucedo # change to your github username
 
 twitter:
-  username: oste_ke # change to your twitter username
+  username: none # change to your twitter username
 
 social:
   name: Stephen Kageche # it will shows as the copyright owner in Footer
-  email: 05t3@protonmail.com # change to your email address
+  email: hassiellsaucedo@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/oste_ke # change to your twitter homepage
