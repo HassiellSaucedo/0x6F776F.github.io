@@ -28,7 +28,7 @@ twitter:
   username: none # change to your twitter username
 
 social:
-  name: Stephen Kageche # it will shows as the copyright owner in Footer
+  name: Hassiell Saucedo # it will shows as the copyright owner in Footer
   email: hassiellsaucedo@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -47,7 +47,7 @@ google_site_verification: CtBtIysuQ8b6k36FI7jqU-o34DRoA_sye50a-RNtPPY # change t
 baseurl: "/0x6F776F.github.io"
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Africa/Nairobi
+timezone: GMT-6
 
 google_analytics:
   id: "G-CQSEKZB9L7" # Fill with your Google Analytics ID
@@ -62,7 +62,7 @@ google_analytics:
 
 disqus:
   comments: true # boolean type, the global switch for posts comments.
-  shortname: "oste" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  shortname: "hass" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 plugins:
   - jekyll-seo-tag
